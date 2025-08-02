@@ -2,16 +2,19 @@
   <h1> Hello World </h1>
   <FirstComponent></FirstComponent>
   <SecondComponent/>
+  <ProductList />
 </template>
 
 <script>
 import FirstComponent from './components/FirstComponent.vue';
 import SecondComponent from './components/SecondComponent.vue';
+import ProductList from './components/ProductList.vue';
 export default {
   name: 'App',
   components: {
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    ProductList,
   }
 }
 </script>
