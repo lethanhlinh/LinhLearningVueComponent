@@ -5,7 +5,9 @@
                 v-for="(productItem, index) in proList"
                 :key="index"
                 class="col-sm-3">
-                <ProductItem :proItem="productItem" />
+                <ProductItem :proItem="productItem"
+                            @custom-handle-select = "HandleSelect" 
+                />
             </div>
         </div>
   </section>
@@ -14,6 +16,11 @@
 <script>
 import ProductItem from './ProductItem.vue';
 export default {
+    methods: {
+        HandleSelect(proItem){
+            console.log("work", proItem)
+        }
+    },
     data() {
         return {
             proList : [
