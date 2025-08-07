@@ -15,6 +15,11 @@ export default {
     FirstComponent,
     SecondComponent,
     ProductList,
+  },
+  provide() {
+    return {
+      user : "Lê Nguyễn Thành Linh"
+    }
   }
 }
 </script>

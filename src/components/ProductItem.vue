@@ -8,6 +8,7 @@
                 @click="handleSelect(proItem)">
             Select
         </button>
+        <p>{{ user }}</p>
         </div>
     </div>
 </template>
@@ -23,7 +24,8 @@ export default {
         proItem: {
             type: Object
         }
-    }
+    },
+    inject : ["user"]
 
 }
 </script>
