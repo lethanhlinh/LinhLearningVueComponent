@@ -3,18 +3,24 @@
   <FirstComponent></FirstComponent>
   <SecondComponent/>
   <ProductList />
+  <LocalComponent />
+  <global-component />
 </template>
 
 <script>
 import FirstComponent from './components/FirstComponent.vue';
 import SecondComponent from './components/SecondComponent.vue';
 import ProductList from './components/ProductList.vue';
+import LocalComponent from './components/LocalComponent.vue';
+import GlobalComponent from './components/GlobalComponent.vue';
 export default {
   name: 'App',
   components: {
     FirstComponent,
     SecondComponent,
     ProductList,
+    LocalComponent,
+    GlobalComponent,
   },
   provide() {
     return {
