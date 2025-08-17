@@ -17,6 +17,9 @@
         <p>Default Template</p>
       </template>
   </DemoSlots>
+  <br>
+  <hr>
+  <DemoDynamicComponent></DemoDynamicComponent>
 </template>
 
 <script>
@@ -26,6 +29,7 @@ import ProductList from './components/ProductList.vue';
 import LocalComponent from './components/LocalComponent.vue';
 import GlobalComponent from './components/GlobalComponent.vue';
 import DemoSlots from './components/DemoSlots.vue';
+import DemoDynamicComponent from './components/DemoDynamicComponent.vue';
 export default {
   name: 'App',
   components: {
@@ -35,6 +39,7 @@ export default {
     LocalComponent,
     GlobalComponent,
     DemoSlots,
+    DemoDynamicComponent,
   },
   provide() {
     return {
