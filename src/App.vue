@@ -5,6 +5,18 @@
   <ProductList />
   <LocalComponent />
   <global-component />
+  <hr>
+  <DemoSlots>
+      <template #header>
+          <h1>This is header</h1>
+      </template>
+      <template #footer>
+        <h2>This is Footer</h2>
+      </template>
+      <template #default>
+        <p>Default Template</p>
+      </template>
+  </DemoSlots>
 </template>
 
 <script>
@@ -13,6 +25,7 @@ import SecondComponent from './components/SecondComponent.vue';
 import ProductList from './components/ProductList.vue';
 import LocalComponent from './components/LocalComponent.vue';
 import GlobalComponent from './components/GlobalComponent.vue';
+import DemoSlots from './components/DemoSlots.vue';
 export default {
   name: 'App',
   components: {
@@ -21,6 +34,7 @@ export default {
     ProductList,
     LocalComponent,
     GlobalComponent,
+    DemoSlots,
   },
   provide() {
     return {
